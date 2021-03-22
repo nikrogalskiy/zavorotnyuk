@@ -1921,6 +1921,7 @@ body.ie ._ibg img {
   font-weight: bold;
   margin: 0px 0px 1.5em 0px;
   display: block;
+  text-align: center;
 }
 
 .skills {
@@ -2865,6 +2866,7 @@ body.ie ._ibg img {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     padding: 0;
+    text-align: left;
   }
 
   .skills {
