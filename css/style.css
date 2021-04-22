@@ -2996,3 +2996,9 @@ body.ie ._ibg img {
     background: url("../img/bg-1.svg") 1.5% 17%/93px 108px no-repeat, url("../img/bg-2.svg") 100% 0%/140px 120px no-repeat, url("../img/bg-3.svg") 0 100%/146px 171px no-repeat, url("../img/bg-4.svg") 100% 89%/132px 124px no-repeat;
   }
 }
+
+@media (max-width: 550px) {
+  .video__body {
+    padding-bottom: 61%;
+  }
+}
