@@ -1887,6 +1887,8 @@ body.ie ._ibg img {
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   text-align: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   position: relative;
   padding: 0px 0px 40% 0px;
 }
@@ -2411,7 +2413,8 @@ body.ie ._ibg img {
 
 @media (min-width: 992px) {
   .btn:hover {
-    border: 2px solid rgba(164, 89, 60, 0.61);
+    border: 2px solid rgba(164, 89, 60, 0.3);
+    border-radius: 10px;
   }
 
   .select__option:hover {
