@@ -2409,6 +2409,10 @@ body.ie ._ibg img {
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
   }
+
+  .slide-reviews {
+    padding: 0px 90px;
+  }
 }
 
 @media (min-width: 992px) {

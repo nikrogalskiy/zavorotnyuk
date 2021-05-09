@@ -163,43 +163,12 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 
 const da = new DynamicAdapt("max");
 da.init();
-// //===Start Прокрутка при клике=====================================================================================================================================================
-
-// const menuIcon = document.querySelector('.menu__icon');
-// const menuBody = document.querySelector('.menu__body');
-// const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
-
-// if (menuLinks.length > 0) {
-// 	menuLinks.forEach(menuLink => {
-// 		menuLink.addEventListener("click", onMenuLinkClick);
-// 	});
-
-// 	function onMenuLinkClick(e) {
-// 		const menuLink = e.target;
-// 		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-// 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
-// 			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
-
-// 			if (iconMenu.classList.contains('_active')) {
-// 				document.body.classList.remove('_lock');
-// 				menuIcon.classList.remove('_active');
-// 				menuBody.classList.remove('_active');
-// 			}
-
-// 			window.scrollTo({
-// 				top: gotoBlockValue,
-// 				behavior: "smooth"
-// 			});
-// 			e.preventDefault();
-// 		}
-// 	}
-// }
-// //=End Прокрутка при клике=======================================================================================================================================================
-const headerButton = document.querySelector('.header__button ');
-const menuBodyNew = document.querySelector('.menu__body');
+const headerButton = document.querySelector('.header__button');
+const bodyNew = document.querySelector("body");
 if (headerButton) {
 	headerButton.addEventListener("click", e => {
-		menuBodyNew.classList.remove('_active');
+		menu_close();
+		bodyNew.classList.remove('_lock');
 	});
 }
 var ua = window.navigator.userAgent;
